@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <h1>⏺Select Test⏺</h1>,
+  document.querySelector("[class=\"generalText\"]")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(
+    <div className="selectBlock">
+      <select name="select">
+        <option value="value1" selected>⭕️___ 1 ___⭕️</option>
+        <option value="value2">⭕️___ 2 ___⭕️</option>
+        <option value="value3">⭕️___ 3 ___⭕️</option>
+        </select>
+    </div>,
+  document.querySelector("[class=\"block\"]")
+);
+
+ReactDOM.render(
+  <div className="button">
+    <form name="generalForm">
+      <input type="button" name="Add_Element" value="Add Element" />
+    </form>
+  </div>,
+document.querySelector("[class=\"button\"]")
+);
